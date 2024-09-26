@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 @layer base{
+    .kalam-regular {
+        font-family: "Kalam", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .archivo-narrow {
+        font-family: "Archivo Narrow", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
 
 }
