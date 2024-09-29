@@ -3,14 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import portræt_1 from "../assets/images/portræt_1.png";
-import portræt_2 from "../assets/images/portræt_2.png";
-import portræt_3 from "../assets/images/portræt_3.png";
 import portræt_4 from "../assets/images/portræt_4.png";
-import portræt_5 from "../assets/images/portræt_5.png";
-import blomst from "../assets/images/Blomst.svg";
-import krusedulle from "../assets/images/Krusedulle.svg";
-import stjerne from "../assets/images/Stjerne.svg";
 import gruppe from "../assets/images/Gruppe_Vector.svg";
 import skitse from "../assets/images/skiste.jpg";
 import clf from "../assets/images/clf.jpg";
@@ -22,126 +15,186 @@ import spil from "../assets/images/spil.jpg";
 
 <MainLayout title="Sarah Albæk">
   <article>
-    <section id="linje">
-      <svg id="linje_svg" viewBox="0 0 1134 5593" fill="none">
-        <path
-          id="animated-path"
-          d="M575.784 1C583.605 277.879 186.527 282.558 123.766 479.421C18.9397 808.224 979.837 529.326 1121.13 799.487C1262.41 1069.65 -21.0182 814.597 50.7753 1234.24C122.898 1655.81 951.684 1253.44 1092.97 1544.71C1234.26 1835.99 -202.211 1639.47 26.7928 2130.14C210.185 2523.08 1082.54 2110.46 1092.97 2312.97C1103.4 2515.47 -26.3269 2539.78 26.7928 2845C54.9224 3006.63 1047.04 2810.07 1037 2973.5C1027.76 3123.95 198.483 3296.61 174.5 3580.5C150.517 3864.39 1012.51 3826.79 1037 3962C1091.18 4261.2 153.103 4029.35 123.766 4332C99.4997 4582.33 325 4581 531.5 4688C738 4795 1144 4859 1037 5058C930 5257 583.046 5167.29 531.5 5400C515.284 5473.21 531.5 5592 531.5 5592"
-          stroke="#FFD2CF"
-          stroke-width="6"
-          stroke-miterlimit="10"
-          stroke-linecap="round"></path>
-      </svg>
-    </section>
+    <section class="absolute">
+      <div class="svg-container">
+        <svg
+          class="small-screen"
+          width="527"
+          height="3691"
+          viewBox="0 0 527 3691"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M307.521 1C310.989 187.402 134.926 190.552 107.097 323.085C60.6177 544.443 449.376 595.028 512.023 776.907C574.67 973.001 -23.2647 1077.88 78.2751 1408.21C159.591 1672.75 625.235 1372.74 504.022 1645C382.81 1917.26 1.99889 1839.22 1.99902 2161.93C1.99913 2435.5 493.166 2380.47 504.022 2471.5C528.047 2672.93 85.2977 2597.28 72.2893 2801.04C61.5299 2969.56 161.577 2997.48 256.851 3016.29C352.125 3035.11 500.828 3134.11 453.385 3268.08C405.941 3402.05 388.991 3395.34 366.136 3552C358.946 3601.28 366.136 3759 366.136 3759"
+            stroke="#FFD2CF"
+            stroke-width="4"></path>
+        </svg>
 
-    <section class="py-12 relative">
-      <div class="absolute inset-x-0 top-[10px] flex justify-center z-10">
-        <Image
-          src={portræt_4}
-          alt="Billede af mig"
-          class="rounded-full h-auto w-[auto]"
-        />
+        <svg
+          class="large-screen"
+          width="1296"
+          height="4302"
+          viewBox="0 0 1296 4302"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M664.567 0C674.429 213.045 173.683 216.645 94.535 368.121C-37.659 621.119 1100.18 612.124 1278.36 820C1456.53 1044.12 -253.793 958.951 35.0001 1336.5C266.272 1638.85 899.5 1361 1246.2 1547.5C1592.9 1734 -77.965 1655.5 94.535 1971C200.326 2164.49 1310.51 1890.5 1278.36 2332C1246.2 2773.5 485.163 2748.5 196.5 2935.5C-33.5 3084.5 70.5001 3601.5 682 3334.5C1293.5 3067.5 1322.5 3483 1173.5 3619.5C1024.5 3756 811.004 3918.44 746 4097.5C725.551 4153.83 746 4302.5 746 4302.5"
+            stroke="#FFD2CF"
+            stroke-width="4"></path>
+        </svg>
       </div>
-      <h2 class="font-[#14293A] text-2xl text-center archivo-narrow pb-4 mt-22">
-        Kreativ, Kunstnerisk Multimediedesigner
-      </h2>
-      <h1 class="kalam-regular font-bold text-[#B3CAE1] text-9xl text-center">
-        SARAH
-      </h1>
     </section>
+  </article>
 
-    <section class="p-8 pt-[450px] relative pb-12">
-      <p class="font-[#14293A] archivo-narrow bg-[#FFF1F0]">
-        Multimediedesigner med en passion for digital design, UX/UI og
-        interaktivt indhold. Med en grunduddannelse i multimediedesign fra KEA
-        og en nysgerrig tilgang til digitale løsninger, skaber jeg
-        brugeroplevelser og visuelle fortællinger, der engagerer og inspirerer.
-      </p>
-    </section>
-    <section>
+  <section class="py-12 relative">
+    <div
+      class="absolute inset-x-0 top-[10px] md:top-[30px] flex justify-center z-10"
+    >
+      <Image
+        src={portræt_4}
+        alt="Billede af mig"
+        class="rounded-full max-h-[800px] w-[auto]"
+      />
+    </div>
+    <h2
+      class="font-[#14293A] text-2xl md:text-3xl text-center archivo-narrow mt-22"
+    >
+      Kreativ, Kunstnerisk Multimediedesigner
+    </h2>
+    <h1
+      class="kalam-regular font-bold text-[#B3CAE1] text-9xl md:text-[200px] text-center"
+    >
+      SARAH
+    </h1>
+  </section>
+
+  <section class="md:px-72 md:py-32 pb-28">
+    <div class="lg:grid grid-cols-2">
+      <div class="p-8 md:p-0 md:pt-[600px] pt-[470px] relative">
+        <p
+          class="font-[#14293A] archivo-narrow bg-[#FFF1F0] lg:text-lg pt-10 lg:pt-0 pb-3"
+        >
+          Jeg er multimediedesigner med en stærk passion for digitalt design,
+          UX/UI og interaktivt indhold. Gennem min igangværende uddannelse i
+          multimediedesign hos KEA forener jeg en <strong
+            >nysgerrig og løsningsorienteret
+          </strong>tilgang til teknologi.
+        </p>
+        <p class="font-[#14293A] archivo-narrow bg-[#FFF1F0] lg:text-lg pb-3">
+          Jeg har erfaring med at udvikle alt fra hjemmesider til webfeatures og
+          interaktive spil, hvor fokus altid er på at sikre en <strong>
+            intuitiv og brugervenlig
+          </strong> grænseflade. Mit arbejde bygger på en solid forståelse af
+          digitale trends, designprincipper og brugeradfærd.
+        </p>
+
+        <p class="font-[#14293A] archivo-narrow bg-[#FFF1F0] lg:text-lg pb-3">
+          Med en stor <strong>interesse i at lære</strong> nye værktøjer og
+          teknologier brænder jeg for at arbejde i krydsfeltet mellem teknologi
+          og design, og for at bringe <strong>kreative idéer</strong> til live
+          gennem brugerdrevet udvikling.
+        </p>
+      </div>
+
       <div>
         <Image
           src={gruppe}
           alt="Krusedulle som vector i svg"
-          class="w-[200px] lg:w-[600px] absolute top-[880px] right-12 lg:right-[350px] z-500"
+          class="w-[200px] lg:w-[300px] absolute top-[1150px] md:top-[1200px] right-12 lg:right-[350px] z-500"
         />
       </div>
-    </section>
-  </article>
-  <section class="p-8 font-[#14293A] archivo-narrow relative pt-36">
-    <h2 class="font-[#14293A] text-2xl archivo-narrow bg-[#FFF1F0] w-fit">
+    </div>
+  </section>
+  <section
+    class="p-8 font-[#14293A] archivo-narrow relative pt-36 md:px-72 pb-28"
+  >
+    <h2
+      class="font-[#14293A] text-2xl archivo-narrow bg-[#FFF1F0] w-fit md:text-3xl"
+    >
       Tekniske færdigheder
     </h2>
     <ul class="list-disc pt-4">
-      <h3 class="font-semibold bg-[#FFF1F0] w-fit">UI/UX Design</h3>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <h3 class="font-semibold bg-[#FFF1F0] w-fit lg:text-lg">UI/UX Design</h3>
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Erfaren inden for design af brugervenlige brugergrænseflader og
         interaktive oplevelser ved hjælp af værktøjer som Figma og Illustrator.
       </li>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Fokus på brugercentrerede designmetoder, herunder wireframes og iterativ
         testning for at optimere brugeroplevelsen.
       </li>
     </ul>
 
     <ul class="list-disc pt-4">
-      <h3 class="font-semibold bg-[#FFF1F0] w-fit">
+      <h3 class="font-semibold bg-[#FFF1F0] w-fit lg:text-lg">
         Prototyping & konceptudvikling
       </h3>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Erfaring med udvikling og test af prototyper i figma og Visual Studio
         Code. Specialiseret i at skabe løsninger, der kombinere design og
         funktionalitet.
       </li>
     </ul>
     <ul class="list-disc pt-4">
-      <h3 class="font-semibold bg-[#FFF1F0] w-fit">Front-end udvikling</h3>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <h3 class="font-semibold bg-[#FFF1F0] w-fit lg:text-lg">
+        Front-end udvikling
+      </h3>
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Kompetencer inden for HTML, CSS og JavaScript til udvikling af dynamiske
         og responsive webløsninger.
       </li>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Erfaring med CSS frameworks som Tailwind og animationsbiblioteker som
         Motion One.
       </li>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Anvendelse af Astro til at bygge, statiske websites samt integration af
         Supabase datebaser til back-end funktioner.
       </li>
     </ul>
     <ul class="list-disc pt-4">
-      <h3 class="font-semibold bg-[#FFF1F0] w-fit">Grafisk Design</h3>
-      <li class="ml-4 bg-[#FFF1F0] w-auto p-1">
+      <h3 class="font-semibold bg-[#FFF1F0] w-fit lg:text-lg">
+        Grafisk Design
+      </h3>
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Færdigheder inden for billedbehandling og fotoredigering med Photoshop.
       </li>
-      <li class="ml-4 bg-[#FFF1F0] w-fit p-1">
+      <li class="ml-4 bg-[#FFF1F0] w-fit p-1 lg:text-lg">
         Design i både InDesign og Illustrator.
       </li>
     </ul>
   </section>
-  <section class="font-[#14293A] archivo-narrow p-8 relative">
+  <section
+    class="font-[#14293A] archivo-narrow p-8 relative md:px-72 text-right pb-28"
+  >
     <div class="grid grid-cols-2">
       <div>
         <Image
           src={gruppe}
           alt="Krusedulle som vector i svg"
-          class="w-[200px] bg-[#FFF1F0] w-fit"
+          class="w-[200px] bg-[#FFF1F0]"
         />
       </div>
       <div>
-        <h2 class="text-2xl archivo-narrow pb-4">Kompetencer</h2>
-        <p class="bg-[#FFF1F0] w-fit">Visuel design & kommunikation</p>
-        <p class="bg-[#FFF1F0] w-fit">Interaktivt design & brugeroplevelser</p>
-        <p class="bg-[#FFF1F0] w-fit">Animation & motion graphics</p>
-        <p class="bg-[#FFF1F0] w-fit">
+        <h2 class="text-2xl archivo-narrow pb-4 md:text-3xl">Kompetencer</h2>
+        <p class="bg-[#FFF1F0] lg:text-lg">Visuel design & kommunikation</p>
+        <p class="bg-[#FFF1F0] lg:text-lg">
+          Interaktivt design & brugeroplevelser
+        </p>
+        <p class="bg-[#FFF1F0] lg:text-lg">Animation & motion graphics</p>
+        <p class="bg-[#FFF1F0] lg:text-lg">
           Konceptudvikling & kreativ problemløsning
         </p>
       </div>
     </div>
   </section>
-  <section class="font-[#14293A] archivo-narrow p-8 relative">
-    <h2 class="text-2xl archivo-narrow pb-4 bg-[#FFF1F0] w-fit">Programmer</h2>
-    <div class="grid grid-cols-2">
+  <section class="font-[#14293A] archivo-narrow p-8 relative md:px-72 pb-28">
+    <h2 class="text-2xl archivo-narrow pb-4 bg-[#FFF1F0] w-fit md:text-3xl">
+      Programmer
+    </h2>
+    <div class="grid grid-cols-2 lg:text-lg">
       <ul>
         <li>Illustrator</li>
         <li>Figma</li>
@@ -150,113 +203,92 @@ import spil from "../assets/images/spil.jpg";
         <li class="bg-[#FFF1F0] w-fit">Photoshop</li>
         <li class="bg-[#FFF1F0] w-fit">InDesign</li>
         <li class="bg-[#FFF1F0] w-fit">Magento - webshop</li>
-        <li>Uniconta</li>
+        <li class="bg-[#FFF1F0] w-fit">Uniconta</li>
       </ul>
       <ul>
         <li>Visual Studio Code</li>
-        <li class="bg-[#FFF1F0] w-fit">Html</li>
-        <li class="bg-[#FFF1F0] w-fit">Javascript</li>
-        <li>Css</li>
-        <li>Tailwind</li>
-        <li>Motion one</li>
-        <li>Astro</li>
+        <li class="pl-4 bg-[#FFF1F0] w-fit">Html</li>
+        <li class="pl-4 bg-[#FFF1F0] w-fit">Javascript</li>
+        <li class="pl-4 bg-[#FFF1F0] w-fit">Css/Tailwind</li>
+        <li class="pl-4">Motion one</li>
+        <li class="pl-4">Astro</li>
         <li>Supabase</li>
       </ul>
     </div>
   </section>
 
-  <section>
-    <div class="flex flex-col p-8 z-50 relative">
-      <h2 class="text-2xl archivo-narrow pb-4 bg-[#FFF1F0] w-fit">
+  <section class="font-[#14293A] archivo-narrow relative pb-28">
+    <div class="md:px-72 relative p-8">
+      <h2 class="text-2xl archivo-narrow md:text-3xl bg-[#FFF1F0] w-fit pb-4">
         Tidligere projekter
       </h2>
 
+      <p
+        class="font-[#14293A] archivo-narrow lg:text-lg bg-[#FFF1F0] w-fit pb-10"
+      >
+        På mit studie som multimediedesigner har jeg arbejdet med at udvikle
+        hjemmesider, webfeatures og spil. Nedenfor kan du se et par billeder fra
+        nogle af de projekter, jeg har udarbejdet.
+      </p>
+    </div>
+
+    <div class="flex flex-col lg:pl-48">
       <div
         class="flex overflow-x-scroll pb-10 hide-scroll-bar font-[#14293A] archivo-narrow"
       >
         <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10">
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div class="">
               <Image
                 src={skitse}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs overflow-hidden"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Skitse.nu - Redesign og kodning af website
-              </p>
             </div>
           </div>
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div>
               <Image
                 src={clf}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Copenhagenlightfestival.org - Redesign af website
-              </p>
             </div>
           </div>
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div>
               <Image
                 src={port}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Portfolie - Design og kodning af website
-              </p>
             </div>
           </div>
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div>
               <Image
                 src={vildmad}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Vildmad.dk - Redesign og kodning af website
-              </p>
             </div>
           </div>
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div>
               <Image
                 src={girl}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Girltalk.dk - Design og udvikling af webfeature
-              </p>
             </div>
           </div>
           <div class="inline-block px-3">
-            <div
-              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+            <div>
               <Image
                 src={spil}
                 alt="Krusedulle som vector i svg"
-                class="w-94 h-64 max-w-xs"
+                class="w-[400px] h-[300px] max-w-md overflow-hidden rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               />
-              <p class="p-2 text-center">
-                Havets Helte - Design og kodning af website/spil
-              </p>
             </div>
           </div>
         </div>
@@ -264,48 +296,123 @@ import spil from "../assets/images/spil.jpg";
     </div>
   </section>
 
+  <section class="md:px-72 relative pb-28 p-8">
+    <h2 class="text-2xl archivo-narrow md:text-3xl pb-4 bg-[#FFF1F0] w-fit">
+      Hvad jeg ønsker fra min praktik
+    </h2>
+
+    <p class="font-[#14293A] archivo-narrow lg:text-lg bg-[#FFF1F0] w-fit pb-3">
+      I forbindelse med min uddannelse som multimediedesigner søger jeg en
+      praktikplads, der giver mig mulighed for at omsætte min teoretiske viden
+      til praksis.
+    </p>
+
+    <p class="font-[#14293A] archivo-narrow lg:text-lg bg-[#FFF1F0] w-fit">
+      Min ambition for praktikperioden er at udvikle mig både fagligt og
+      personligt. Jeg håber på at få dybere indsigt i hele design- og
+      udviklingsprocessen, fra idéudvikling til færdige produkter, samtidig med
+      at jeg udvider mine tekniske færdigheder inden for prototyping,
+      designværktøjer og webudvikling.
+    </p>
+  </section>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const path = document.getElementById("animated-path");
-      const pathLength = path.getTotalLength();
+      let path;
 
-      // Initial indstillinger: skjul hele linjen
-      path.style.strokeDasharray = pathLength + " " + pathLength;
-      path.style.strokeDashoffset = pathLength;
+      // Funktion til at vælge det rigtige path baseret på skærmstørrelse
+      function selectPath() {
+        if (window.innerWidth >= 1024) {
+          // Stor skærm: Vælg path fra den store SVG
+          path = document.querySelector(".large-screen path");
+        } else {
+          // Lille skærm: Vælg path fra den lille SVG
+          path = document.querySelector(".small-screen path");
+        }
 
-      // Scroll event handler
-      function updateLineOnScroll() {
-        const scrollPercentage =
-          document.documentElement.scrollTop /
-          (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight);
+        // Hvis der ikke findes et path (f.eks. ved fejl), stop
+        if (!path) return;
 
-        // Forøg hastigheden ved at multiplicere scrollPercentage
-        const speedMultiplier = 1.5; // Juster denne værdi for hurtigere eller langsommere scrolling
-        const drawLength = pathLength * (scrollPercentage * speedMultiplier);
+        const pathLength = path.getTotalLength();
 
-        path.style.strokeDashoffset = pathLength - drawLength;
+        // Initial indstillinger: skjul hele linjen
+        path.style.strokeDasharray = pathLength + " " + pathLength;
+        path.style.strokeDashoffset = pathLength;
 
-        // Brug requestAnimationFrame for en flydende animation
-        requestAnimationFrame(updateLineOnScroll);
+        // Få højden af dit indhold
+        const contentHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        // Scroll event handler
+        function updateLineOnScroll() {
+          const scrollTop = document.documentElement.scrollTop;
+
+          // Beregn scroll-procent baseret på indholdets højde
+          const scrollPercentage = scrollTop / contentHeight;
+
+          // Beregn hvor meget af linjen der skal tegnes
+          let drawLength = pathLength * scrollPercentage;
+
+          // Begræns linjens længde til den faktiske længde af pathen
+          if (drawLength > pathLength) {
+            drawLength = pathLength;
+          }
+
+          // Juster hastigheden afhængigt af skærmstørrelsen
+          if (window.innerWidth >= 1024) {
+            const speedMultiplier = 1.25; // Juster for store skærme
+            drawLength *= speedMultiplier;
+          } else {
+            const speedMultiplier = 1; // Juster for små skærme
+            drawLength *= speedMultiplier;
+          }
+
+          // Sæt strokeDashoffset for at opdatere linjens længde
+          path.style.strokeDashoffset = pathLength - drawLength;
+
+          // Brug requestAnimationFrame for en flydende animation
+          requestAnimationFrame(updateLineOnScroll);
+        }
+
+        // Start animationen
+        updateLineOnScroll();
+
+        // Opdater animationen, hvis vinduet ændres
+        window.addEventListener("resize", () => {
+          // Vælg den rigtige path igen ved resize
+          selectPath();
+        });
       }
 
-      // Start animationen
-      updateLineOnScroll();
+      // Kald funktionen for første gang for at vælge det rigtige path
+      selectPath();
     });
   </script>
 
   <style>
-    #linje {
-      position: absolute; /* Fra absolute til relative */
+    .svg-container {
+      position: relative;
       top: 0;
-      width: 100%; /* Fyld hele bredden */
-      height: auto; /* Sørg for at højden justerer sig automatisk */
-      text-align: center;
-      overflow: visible; /* Midlertidigt fjern hidden for debugging */
     }
-    #linje_svg {
-      display: inline-block;
+
+    .small-screen {
+      display: none; /* Skjul på store skærme */
+    }
+
+    .large-screen {
+      display: block; /* Vis som standard */
+    }
+
+    /* Medieforespørgsel til små skærme */
+    @media (max-width: 768px) {
+      .small-screen {
+        display: block; /* Vis for små skærme */
+      }
+
+      .large-screen {
+        display: none; /* Skjul på små skærme */
+      }
     }
   </style>
   <style>
